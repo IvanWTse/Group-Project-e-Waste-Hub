@@ -22,7 +22,8 @@ const registerOnclick = () => {
             email: document.getElementById("emailInput").value,
             password: document.getElementById("passwordInput").value,
             first_name: document.getElementById("firstNameInput").value,
-            last_name: document.getElementById("lastNameInput").value
+            last_name: document.getElementById("lastNameInput").value,
+            phone_no:document.getElementById("phoneNumberInput").value,
         })
     });
     fetch(myRequest).then((response) => {
@@ -58,7 +59,7 @@ export default function Register() {
                             <label className={"text-left block mb-2 text-xl font-medium text-gray-900 dark:text-white"}>*
                                 First Name</label>
                             <input
-                                className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"}
+                                className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:outline-0"}
                                 type="text"
                                 id={"firstNameInput"}
                             ></input>
@@ -69,7 +70,7 @@ export default function Register() {
                                 className={" text-left block mb-2 text-xl font-medium text-gray-900 dark:text-white"}>*
                                 Last Name</label>
                             <input
-                                className={" block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"}
+                                className={" block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:outline-0"}
                                 type="text"
                                 id={"lastNameInput"}
                             ></input>
@@ -79,22 +80,34 @@ export default function Register() {
                         <label className={"text-left block mb-2 text-xl font-medium text-gray-900 dark:text-white"}>*
                             Password</label>
                         <input
-                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"}
-                            type="password"></input>
+                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:outline-0"}
+                            type="password"
+                            id={"passwordInput"}></input>
                     </div>
                     <div className={"flex flex-col mt-3 w-full"}>
                         <label className={"text-left block mb-2 text-xl font-medium text-gray-900 dark:text-white"}>*
                             Confirm Password</label>
                         <input
-                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"}
-                            type="password"></input>
+                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:outline-0"}
+                            type="password"
+                            id={"confirmPasswordInput"}></input>
                     </div>
                     <div className={"flex flex-col mt-3 w-full"}>
                         <label className={"text-left block mb-2 text-xl font-medium text-gray-900 dark:text-white"}>*
                             Email</label>
                         <input
-                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"}
-                            type="text"></input>
+                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:outline-0"}
+                            type="text"
+                            id={"emailInput"}></input>
+                    </div>
+                    <div className={"flex flex-col mt-3 w-full"}>
+                        <label className={"text-left block mb-2 text-xl font-medium text-gray-900 dark:text-white"}>*
+                            Phone Number</label>
+                        <input
+                            className={"block w-full p-2 text-gray-900 border border-[#509E82] border-2 rounded-lg bg-gray-50 sm:text-md focus:outline-0"}
+                            type="text"
+                            id={"phoneNumberInput"}
+                        ></input>
                     </div>
                     <div
                         className={"my-6 text-white flex bg-[#509E82] mx-auto h-full justify-center w-full text-lg p-2 items-center font-medium cursor-pointer rounded-lg hover:bg-[#4E8E77]"}>
